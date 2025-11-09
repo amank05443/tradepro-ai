@@ -1,0 +1,91 @@
+.order-book {
+  background: #1e222d;
+  border-radius: 8px;
+  padding: 20px;
+  max-height: 500px;
+}
+
+.order-book h3 {
+  margin: 0 0 15px 0;
+  color: #d1d4dc;
+  font-size: 18px;
+}
+
+.loading,
+.no-orders {
+  text-align: center;
+  color: #787b86;
+  padding: 20px;
+}
+
+.orders-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.order-item {
+  background: #2a2e39;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.order-side {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.order-side.buy {
+  background: #26a69a33;
+  color: #26a69a;
+}
+
+.order-side.sell {
+  background: #ef535033;
+  color: #ef5350;
+}
+
+.order-status {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.order-details p {
+  margin: 0;
+  color: #d1d4dc;
+  font-size: 13px;
+}
+
+.order-time {
+  color: #787b86;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.cancel-order-btn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  background: transparent;
+  border: 1px solid #ef5350;
+  color: #ef5350;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cancel-order-btn:hover {
+  background: #ef5350;
+  color: white;
+}

@@ -1,0 +1,341 @@
+.order-form {
+  background: #1e222d;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.order-form h3 {
+  margin: 0 0 20px 0;
+  color: #d1d4dc;
+  font-size: 18px;
+}
+
+.paper-trading-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.badge-icon {
+  font-size: 16px;
+}
+
+.portfolio-summary {
+  background: #2a2e39;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #434651;
+}
+
+.portfolio-summary h4 {
+  margin: 0 0 12px 0;
+  color: #d1d4dc;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.balance-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.balance-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.balance-item .label {
+  color: #787b86;
+  font-size: 13px;
+}
+
+.balance-item .value {
+  color: #d1d4dc;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.balance-item .value.total {
+  color: #26a69a;
+  font-size: 16px;
+}
+
+.current-price {
+  background: #2d3142;
+  border: 1px solid #434651;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-label {
+  color: #787b86;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.price-value {
+  color: #2962ff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.order-type-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.order-side-btn {
+  padding: 12px;
+  border: 2px solid #2a2e39;
+  background: transparent;
+  color: #787b86;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.order-side-btn.buy-active {
+  background: #26a69a;
+  border-color: #26a69a;
+  color: white;
+}
+
+.order-side-btn.sell-active {
+  background: #ef5350;
+  border-color: #ef5350;
+  color: white;
+}
+
+.order-type-tabs {
+  display: flex;
+  gap: 5px;
+  background: #2a2e39;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
+.order-type-tabs button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  color: #787b86;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.order-type-tabs button.active {
+  background: #1e222d;
+  color: #d1d4dc;
+}
+
+.amount-type-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.amount-type-btn {
+  padding: 10px 12px;
+  border: 1px solid #434651;
+  background: #2a2e39;
+  color: #787b86;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  transition: all 0.2s;
+}
+
+.amount-type-btn:hover {
+  border-color: #2962ff;
+  color: #d1d4dc;
+}
+
+.amount-type-btn.active {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  border-color: #2962ff;
+  color: #2962ff;
+}
+
+.conversion-hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #2962ff;
+  font-weight: 600;
+  padding: 6px 10px;
+  background: rgba(41, 98, 255, 0.1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.amount-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.balance-info-inline {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.balance-label {
+  color: #787b86;
+  font-weight: 600;
+}
+
+.balance-value {
+  color: #26a69a;
+  font-weight: 700;
+}
+
+.input-with-max {
+  position: relative;
+  display: flex;
+  gap: 8px;
+}
+
+.input-with-max input {
+  flex: 1;
+}
+
+.max-btn {
+  background: linear-gradient(135deg, #26a69a 0%, #1f8e82 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.max-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(38, 166, 154, 0.4);
+}
+
+.max-btn:active {
+  transform: translateY(0);
+}
+
+.max-buy-hint {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #26a69a;
+  font-weight: 600;
+  padding: 6px 10px;
+  background: rgba(38, 166, 154, 0.1);
+  border-radius: 4px;
+  text-align: center;
+  border: 1px solid rgba(38, 166, 154, 0.3);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #787b86;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  background: #2a2e39;
+  border: 1px solid #434651;
+  border-radius: 4px;
+  color: #d1d4dc;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2962ff;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.submit-btn.buy {
+  background: #26a69a;
+  color: white;
+}
+
+.submit-btn.buy:hover {
+  background: #1f8e82;
+}
+
+.submit-btn.sell {
+  background: #ef5350;
+  color: white;
+}
+
+.submit-btn.sell:hover {
+  background: #e53935;
+}
+
+.submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.message.success {
+  background: #26a69a33;
+  color: #26a69a;
+  border: 1px solid #26a69a;
+}
+
+.message.error {
+  background: #ef535033;
+  color: #ef5350;
+  border: 1px solid #ef5350;
+}

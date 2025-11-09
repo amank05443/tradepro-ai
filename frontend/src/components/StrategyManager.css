@@ -1,0 +1,259 @@
+.strategy-manager {
+  background: #1e222d;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.strategy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.strategy-header h3 {
+  margin: 0;
+  color: #d1d4dc;
+  font-size: 18px;
+}
+
+.add-strategy-btn {
+  background: #2962ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.add-strategy-btn:hover {
+  background: #1e53e5;
+}
+
+.strategy-message {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.strategy-message.success {
+  background: #26a69a33;
+  color: #26a69a;
+  border: 1px solid #26a69a;
+}
+
+.strategy-message.error {
+  background: #ef535033;
+  color: #ef5350;
+  border: 1px solid #ef5350;
+}
+
+.strategy-form {
+  background: #2a2e39;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.strategy-form .form-group {
+  margin-bottom: 12px;
+}
+
+.strategy-form label {
+  display: block;
+  margin-bottom: 6px;
+  color: #787b86;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.strategy-form small {
+  display: block;
+  margin-top: 4px;
+  color: #787b86;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.strategy-form input,
+.strategy-form select {
+  width: 100%;
+  padding: 10px;
+  background: #1e222d;
+  border: 1px solid #434651;
+  border-radius: 4px;
+  color: #d1d4dc;
+  font-size: 14px;
+}
+
+.strategy-form input:focus,
+.strategy-form select:focus {
+  outline: none;
+  border-color: #2962ff;
+}
+
+.create-strategy-btn {
+  width: 100%;
+  padding: 12px;
+  background: #26a69a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.create-strategy-btn:hover {
+  background: #1f8e82;
+}
+
+.strategies-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.no-strategies {
+  text-align: center;
+  color: #787b86;
+  padding: 40px 20px;
+}
+
+.strategy-card {
+  background: #131722;
+  border: 1px solid #2a2e39;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all 0.3s;
+}
+
+.strategy-card.active {
+  border-color: #26a69a;
+  box-shadow: 0 0 15px rgba(38, 166, 154, 0.2);
+}
+
+.strategy-card.inactive {
+  opacity: 0.7;
+}
+
+.strategy-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.status-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.active {
+  background: rgba(38, 166, 154, 0.2);
+  color: #26a69a;
+}
+
+.status-badge.inactive {
+  background: rgba(132, 142, 156, 0.2);
+  color: #848e9c;
+}
+
+.strategy-info {
+  flex: 1;
+}
+
+.strategy-info h4 {
+  margin: 0;
+  color: #d1d4dc;
+  font-size: 16px;
+}
+
+.strategy-type {
+  color: #2962ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 8px 0;
+  display: inline-block;
+  padding: 3px 8px;
+  background: rgba(41, 98, 255, 0.1);
+  border-radius: 4px;
+}
+
+.strategy-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background: #2a2e39;
+  border-radius: 4px;
+}
+
+.detail-item .label {
+  color: #787b86;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.detail-item .value {
+  color: #d1d4dc;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.strategy-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle-btn {
+  padding: 6px 12px;
+  border: 1px solid #434651;
+  background: transparent;
+  color: #787b86;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.toggle-btn.active {
+  background: #26a69a;
+  border-color: #26a69a;
+  color: white;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  border: 1px solid #ef5350;
+  background: transparent;
+  color: #ef5350;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background: #ef5350;
+  color: white;
+}

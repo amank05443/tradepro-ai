@@ -1,0 +1,204 @@
+.crypto-chart {
+  background: #1e222d;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  min-height: 600px;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.chart-title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.chart-header h3 {
+  color: #d1d4dc;
+  margin: 0;
+  font-size: 20px;
+}
+
+.chart-source {
+  color: #787b86;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.chart-controls-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timeframe-select {
+  background: #2a2e39;
+  color: #d1d4dc;
+  border: 1px solid #434651;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.timeframe-select:hover {
+  border-color: #2962ff;
+  background: #2d3139;
+}
+
+.timeframe-select:focus {
+  border-color: #2962ff;
+  box-shadow: 0 0 0 2px rgba(41, 98, 255, 0.2);
+}
+
+.fullscreen-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2a2e39;
+  color: #d1d4dc;
+  border: 1px solid #434651;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.fullscreen-btn:hover {
+  background: #2962ff;
+  border-color: #2962ff;
+  color: white;
+}
+
+.fullscreen-btn svg {
+  flex-shrink: 0;
+}
+
+.tradingview-widget-container {
+  height: 550px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.current-price {
+  color: #d1d4dc;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.price-change {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.price-change.positive {
+  background: #26a69a33;
+  color: #26a69a;
+}
+
+.price-change.negative {
+  background: #ef535033;
+  color: #ef5350;
+}
+
+.chart-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.chart-type-toggle {
+  display: flex;
+  gap: 5px;
+  background: #2a2e39;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.chart-type-toggle button {
+  padding: 6px 12px;
+  border: none;
+  background: transparent;
+  color: #787b86;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.chart-type-toggle button:hover {
+  color: #d1d4dc;
+}
+
+.chart-type-toggle button.active {
+  background: #2962ff;
+  color: white;
+}
+
+.interval-badge {
+  background: #2962ff;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.chart-container {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.chart-loading {
+  text-align: center;
+  padding: 200px 20px;
+  color: #d1d4dc;
+  font-size: 16px;
+}
+
+.custom-tooltip {
+  background: #2a2e39;
+  border: 1px solid #434651;
+  padding: 12px;
+  border-radius: 6px;
+  color: #d1d4dc;
+}
+
+.custom-tooltip p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.custom-tooltip .label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.custom-tooltip .price {
+  color: #2962ff;
+  font-weight: 600;
+  font-size: 14px;
+}

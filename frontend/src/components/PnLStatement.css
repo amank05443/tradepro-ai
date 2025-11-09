@@ -1,0 +1,501 @@
+.pnl-statement {
+  background: #1e222d;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.pnl-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pnl-title-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pnl-header h3 {
+  margin: 0;
+  color: #d1d4dc;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pnl-period-badge {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  border: 1px solid rgba(102, 126, 234, 0.3);
+  color: #667eea;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.refresh-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #2a2e39;
+  color: #787b86;
+  border: 1px solid #434651;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.refresh-btn:hover {
+  background: #363a45;
+  color: #d1d4dc;
+  border-color: #565a65;
+}
+
+.refresh-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 60px 20px;
+  color: #787b86;
+  font-size: 14px;
+}
+
+.error {
+  color: #ef5350;
+}
+
+.no-data {
+  text-align: center;
+  padding: 60px 20px;
+  color: #787b86;
+}
+
+.no-data svg {
+  margin-bottom: 16px;
+  color: #434651;
+}
+
+.no-data p {
+  margin: 0 0 8px 0;
+  color: #d1d4dc;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.no-data span {
+  font-size: 13px;
+  color: #787b86;
+}
+
+/* Date Filters */
+.pnl-filters {
+  background: #131722;
+  border: 1px solid #2a2e39;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: #2a2e39;
+  border: 1px solid #434651;
+  color: #787b86;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  background: #363a45;
+  color: #d1d4dc;
+  border-color: #565a65;
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+  border-color: #667eea;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.custom-date-range {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #2a2e39;
+  flex-wrap: wrap;
+}
+
+.date-input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.date-input-group label {
+  color: #787b86;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.date-input-group input[type="date"] {
+  background: #2a2e39;
+  border: 1px solid #434651;
+  color: #d1d4dc;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 150px;
+}
+
+.date-input-group input[type="date"]:hover {
+  border-color: #667eea;
+  background: #2d3142;
+}
+
+.date-input-group input[type="date"]:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Date picker styling for webkit browsers */
+.date-input-group input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.6);
+  cursor: pointer;
+}
+
+.date-input-group input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  filter: invert(0.8);
+}
+
+/* Summary Cards */
+.pnl-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  background: #131722;
+  border: 1px solid #2a2e39;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+}
+
+.summary-card.main {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, #1e222d 0%, #2a2e39 100%);
+  border-color: #434651;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: rgba(41, 98, 255, 0.1);
+  border-radius: 8px;
+  color: #2962ff;
+  flex-shrink: 0;
+}
+
+.summary-card.main .card-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(38, 166, 154, 0.15);
+  color: #26a69a;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-label {
+  color: #787b86;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.card-value {
+  color: #d1d4dc;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.summary-card.main .card-value {
+  font-size: 32px;
+}
+
+.card-value.positive {
+  color: #26a69a;
+}
+
+.card-value.negative {
+  color: #ef5350;
+}
+
+.card-sublabel {
+  color: #787b86;
+  font-size: 12px;
+}
+
+/* Details Section */
+.pnl-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details-section {
+  background: #131722;
+  border: 1px solid #2a2e39;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.details-section h4 {
+  margin: 0 0 16px 0;
+  color: #d1d4dc;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #1e222d;
+  border: 1px solid #2a2e39;
+  border-radius: 6px;
+}
+
+.stat-label {
+  color: #787b86;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stat-value {
+  color: #d1d4dc;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.stat-value.positive {
+  color: #26a69a;
+}
+
+.stat-value.negative {
+  color: #ef5350;
+}
+
+/* Highlights */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.highlight-card {
+  background: #1e222d;
+  border: 1px solid #2a2e39;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.highlight-card.best {
+  border-color: rgba(38, 166, 154, 0.3);
+  background: linear-gradient(135deg, rgba(38, 166, 154, 0.05) 0%, #1e222d 100%);
+}
+
+.highlight-card.worst {
+  border-color: rgba(239, 83, 80, 0.3);
+  background: linear-gradient(135deg, rgba(239, 83, 80, 0.05) 0%, #1e222d 100%);
+}
+
+.highlight-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #787b86;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.highlight-card.best .highlight-header {
+  color: #26a69a;
+}
+
+.highlight-card.worst .highlight-header {
+  color: #ef5350;
+}
+
+.highlight-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.highlight-symbol {
+  color: #2962ff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.highlight-pnl {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.highlight-pnl.positive {
+  color: #26a69a;
+}
+
+.highlight-pnl.negative {
+  color: #ef5350;
+}
+
+.pnl-pct {
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.highlight-details {
+  color: #787b86;
+  font-size: 12px;
+}
+
+/* Trades Table */
+.trades-table {
+  overflow-x: auto;
+}
+
+.trades-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trades-table th {
+  text-align: left;
+  padding: 12px 16px;
+  color: #787b86;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #2a2e39;
+}
+
+.trades-table td {
+  padding: 12px 16px;
+  color: #d1d4dc;
+  font-size: 13px;
+  border-bottom: 1px solid #2a2e39;
+}
+
+.trades-table tr:last-child td {
+  border-bottom: none;
+}
+
+.trades-table tr.win {
+  background: rgba(38, 166, 154, 0.03);
+}
+
+.trades-table tr.loss {
+  background: rgba(239, 83, 80, 0.03);
+}
+
+.trades-table tr:hover {
+  background: rgba(41, 98, 255, 0.05);
+}
+
+.symbol-cell {
+  color: #2962ff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.trades-table .positive {
+  color: #26a69a;
+  font-weight: 600;
+}
+
+.trades-table .negative {
+  color: #ef5350;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pnl-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-card.main {
+    grid-column: 1;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trades-table {
+    font-size: 12px;
+  }
+
+  .trades-table th,
+  .trades-table td {
+    padding: 8px 10px;
+  }
+}

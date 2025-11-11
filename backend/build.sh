@@ -6,3 +6,6 @@ pip install -r requirements.txt
 
 python manage.py collectstatic --no-input
 python manage.py migrate
+
+# Create initial superuser and trading pairs
+python create_initial_data.py

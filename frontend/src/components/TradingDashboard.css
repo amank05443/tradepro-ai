@@ -555,6 +555,7 @@
 /* User Menu */
 .user-menu {
   position: relative;
+  z-index: 1001;
 }
 
 .user-button {

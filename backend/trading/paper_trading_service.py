@@ -121,7 +121,10 @@ class PaperTradingService:
         total_cost = Decimal(str(amount)) * current_price
 
         # Check if user has enough balance
-        settings = UserSettings.objects.select_for_update().get(user=user)
+        settings, created = UserSettings.objects.select_for_update().get_or_create(
+            user=user,
+            defaults={'paper_balance_usdt': Decimal('10000.00000000')}
+        )
         if settings.paper_balance_usdt < total_cost:
             raise ValueError(
                 f"Insufficient balance. Required: {total_cost:.2f} USDT, "
@@ -213,7 +216,10 @@ class PaperTradingService:
         )
 
         # Add to balance
-        settings = UserSettings.objects.select_for_update().get(user=user)
+        settings, created = UserSettings.objects.select_for_update().get_or_create(
+            user=user,
+            defaults={'paper_balance_usdt': Decimal('10000.00000000')}
+        )
         settings.paper_balance_usdt += total_proceeds
         settings.save()
 
